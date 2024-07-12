@@ -1,4 +1,3 @@
-// app/page.tsx
 import React from 'react';
 import Link from 'next/link';
 import ConnectButton from './components/ConnectButton';
@@ -8,7 +7,10 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-r from-blue-900 to-purple-900 text-white">
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-6xl font-bold mb-8 text-center animate-pulse">CryptoWall</h1>
+        <h1 className="text-6xl font-bold mb-8 text-center relative inline-block">
+          <span className="relative z-10">CryptoWall</span>
+          <span className="absolute inset-0 bg-blue-500 opacity-0 transition-opacity duration-300 ease-in-out rounded-lg hover:opacity-25 group-hover:animate-blob"></span>
+        </h1>
         <div className="bg-gray-800 rounded-lg shadow-lg p-8 mb-8 transform hover:scale-105 transition duration-300">
           <h2 className="text-3xl font-semibold mb-4">Welcome to CryptoWall</h2>
           <p className="text-xl mb-4">Your secure gateway to crypto transactions</p>

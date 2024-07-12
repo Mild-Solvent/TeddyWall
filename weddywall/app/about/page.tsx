@@ -1,6 +1,7 @@
 // app/about/page.tsx
 import React from 'react';
 import Link from 'next/link';
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 export default function About() {
   return (
@@ -33,6 +34,21 @@ export default function About() {
           </div>
         </div>
         <div className="mt-16 text-center">
+          <h2 className="text-2xl font-semibold mb-4">Connect with Us</h2>
+          <div className="flex justify-center space-x-4">
+            <a href="https://github.com/Mild-Solvent" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-300 transition-colors">
+              <FaGithub />
+            </a>
+            <a href="https://twitter.com/your_twitter" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-300 transition-colors">
+              <FaTwitter />
+            </a>
+            <a href="https://linkedin.com/in/your_linkedin" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-300 transition-colors">
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-8 text-center">
           <Link href="/" className="text-blue-300 hover:text-blue-100 mr-4">Back to Home</Link>
           <Link href="/contact" className="text-blue-300 hover:text-blue-100">Contact Us</Link>
         </div>
