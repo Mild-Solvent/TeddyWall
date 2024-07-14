@@ -5,3 +5,14 @@
 body {
   @apply bg-gray-900 text-white;
 }
+
+/* Hide scrollbar for all browsers */
+html {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
